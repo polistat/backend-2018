@@ -1,12 +1,16 @@
 [submodule "data"]
 	path = data
 	url = https://github.com/polistat/polistat-data.git
+	branch = master
 [submodule "blairvoyance"]
 	path = blairvoyance
 	url = https://github.com/polistat/polistat-blairvoyance
+	branch = automation
 [submodule "results"]
 	path = results
 	url = https://github.com/polistat/polistat-results.git
+	branch = master
 [submodule "calc"]
 	path = calc
 	url = https://github.com/polistat/polistat-calc.git
+	branch = automation
