@@ -60,7 +60,7 @@ class NationalPredictionSerializer(json.JSONEncoder):
 
 
 prediction_list = []
-for row in open('district_results.csv','r').read().split("\n")[:-1]:
+for row in open('district_results.csv','r').read().split("\n")[1:-1]:
     row = row.split(',')
     dt = datetime(int(row[0]),int(row[1]),int(row[2]),12)
     prediction_list.append(Prediction(row[3],float(row[4]),float(row[5]),float(row[6]),dt))
