@@ -1,21 +1,28 @@
 import json
 
-old_dists = "old_dists.txt"
+old_dists = "olddistricts.txt"
 f = open(old_dists,"r").read().split(',\n')
 
 
 
 fixtures = {}
 
-bpis = open("bpis.csv","r").read().split("\n")
+bpis = open("build/district_results.csv","r").read().split("\n")
+
+data = {}
+for bpi in bpis[1:436]:
+    row = bpi.split(",")
+    #print(row)
+    data[row[3]] = [row[9], row[7]]
 
 final = []
 
-for district, bpis in zip(f, bpis):
+for district in f:
     district_dict = json.loads(district)
+    name = district_dict["pk"]
     temp = district_dict["fields"]
-    temp["bpi"] = float(bpis.split(",")[1])
-    temp["fundamental"] = float(bpis.split(",")[2])
+    temp["bpi"] = float(data[name][0])
+    temp["fundamental"] = float(data[name][1])
 
     district_dict["fields"] = temp
     final.append(str(district_dict))
