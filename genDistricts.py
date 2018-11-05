@@ -1,7 +1,7 @@
 import json
 
 old_dists = "olddistricts.txt"
-f = open(old_dists,"r").read().split(',\n')
+f = map(lambda s: s.strip(","), open(old_dists,"r").read().split('\n')[1:436])
 
 
 
