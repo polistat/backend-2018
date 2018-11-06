@@ -5,7 +5,7 @@
 [submodule "blairvoyance"]
 	path = blairvoyance
 	url = https://github.com/polistat/polistat-blairvoyance
-	branch = automation
+	branch = master
 [submodule "results"]
 	path = results
 	url = https://github.com/polistat/polistat-results.git
