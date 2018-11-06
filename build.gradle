@@ -30,7 +30,7 @@ project(":data") {
 
 	task pull(type: Exec) {
    		description 'Updates data.'
-		commandLine "git", "checkout", "master"
+		commandLine "git", "checkout", "live-forecast"
     	commandLine "git", "pull"
 	}
 	
@@ -69,6 +69,7 @@ task collectData(type: Copy) {
     include 'district_input.csv'
     include 'national_polls.csv'
     include 'poll_input.csv'
+	include 'live_results.csv'
 }
 
 task collectCalc(type: Copy) {

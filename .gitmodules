@@ -1,7 +1,7 @@
 [submodule "data"]
 	path = data
 	url = https://github.com/polistat/polistat-data.git
-	branch = master
+	branch = live-forecast
 [submodule "blairvoyance"]
 	path = blairvoyance
 	url = https://github.com/polistat/polistat-blairvoyance
@@ -13,4 +13,4 @@
 [submodule "calc"]
 	path = calc
 	url = https://github.com/polistat/polistat-calc.git
-	branch = master
+	branch = live-forecast
