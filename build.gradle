@@ -30,6 +30,7 @@ project(":data") {
 
 	task pull(type: Exec) {
    		description 'Updates data.'
+		commandLine "git", "checkout", "master"
     	commandLine "git", "pull"
 	}
 	

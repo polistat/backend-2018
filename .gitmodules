@@ -13,4 +13,4 @@
 [submodule "calc"]
 	path = calc
 	url = https://github.com/polistat/polistat-calc.git
-	branch = automation
+	branch = master
