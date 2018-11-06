@@ -113,3 +113,6 @@ task moveToResults(type: Copy) {
 
 assemble.dependsOn(moveToResults)
 
+task wrapper(type: Wrapper) {
+	gradleVersion = '4.3'
+}
